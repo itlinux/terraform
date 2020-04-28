@@ -1,18 +1,18 @@
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = var.vm-location["region"]
 }
 
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = "us-east1"
     alias       = "east"
 }
 
 module "mysql-vm" {
-    source = "/Users/work/Documents/TERRAFORM/modules/vms/mysql"
+    source = "/Users/work/Documents/TERRAFORM/modules/vms/mysql_provider"
 
     instance-name = "${var.instance-name}-${var.environment}"
     machine-type = var.machine-type

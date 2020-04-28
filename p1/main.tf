@@ -1,6 +1,6 @@
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = "us-central1"
 }
 
@@ -10,7 +10,7 @@ resource "google_compute_address" "ip_address" {
 
 /*
 resource "google_storage_bucket" "bucket_1" {
-  name          = "terraform-demo-skd1-bucket1"
+  name          = "terraform-demo-bucket1"
   location      = "US"
   storage_class = "STANDARD"
 }

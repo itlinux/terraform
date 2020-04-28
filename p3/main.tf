@@ -1,6 +1,6 @@
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = var.vm-location["region"]
 }
 

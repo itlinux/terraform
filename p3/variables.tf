@@ -21,7 +21,7 @@ variable "machine-type" {
 }
 variable "mysql_image" {
     type = string
-    default = "projects/terraform-demo-skd1/global/images/mysql-57"
+    default = "projects/terraform-demo/global/images/mysql-57"
 }
 
 variable "vpc-network-name" {

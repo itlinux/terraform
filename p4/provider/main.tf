@@ -1,12 +1,12 @@
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = "us-central1"
 }
 
 provider "google" {
     credentials = file("CHANGE_IT_service_account.json")
-    project     = "terraform-demo-skd1"
+    project     = "terraform-demo"
     region      = "us-east1"
     alias       = "east"
 }

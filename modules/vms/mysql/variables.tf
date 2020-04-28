@@ -17,3 +17,7 @@ variable "mysql_image" {
 variable "vpc-network-name" {
     type = string
 }
+
+variable "mysql-static-ip" {
+    type = string
+}
